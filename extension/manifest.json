@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"minimum_chrome_version": "29",
+	
+	"name": "Browser-StayProductive bridge",
+	"description": "Used to gather data about browsed sites for tracking done by StayProductive",
+	"version": "0.1",
+	
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"nativeMessaging",
+		"background",
+		"webNavigation",
+		"history",
+		"storage",
+		"http://*/",
+		"https://*/"
+	],
+	
+	"background": {
+		"scripts": ["background.js"]
+	}
+}

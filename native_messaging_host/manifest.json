@@ -1,0 +1,9 @@
+{
+  "name": "ezo.stayproductive.native_messaging_host",
+  "description": "Native messaging host",
+  "path": "scratch.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://jphndneglodinampimjbpnjbphheafkp/"
+  ]
+}
