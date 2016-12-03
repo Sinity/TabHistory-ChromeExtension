@@ -1,12 +1,9 @@
 #include "native_messaging.h"
-#include "outbound_named_pipe.h"
 
 int main()
 {
     NativeMessaging::init();
-    OutboundNamedPipe pipe("\\\\.\\pipe\\the_pajp");
-
-    NativeMessaging::sendMessage("Native messaging host is running.");
+    NativeMessaging::sendMessage("Native messaging host started.");
 
     while(true) {
         auto response = NativeMessaging::readResponse();
@@ -14,7 +11,7 @@ int main()
             break;
         }
 
-        pipe.send(response.c_str());
+        //TODO: send the response to the main app
     }
 
     return 0;

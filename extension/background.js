@@ -10,14 +10,14 @@ function setupNativeMessaging() {
 	});
 
 	nativeMessagingPort.onDisconnect.addListener(function() {
-		//console.log("Native messaging host has disconnected, attempting reconnect");
+		console.log("Native messaging host has disconnected, attempting reconnect");
         setupNativeMessaging();
 	});
 }
 
 function nmMessage(message) {
-    //nativeMessagingPort.postMessage({"msg": message});
-    console.log(message);
+    nativeMessagingPort.postMessage({"msg": message});
+    console.log("nmMessage: " + message);
 }
 
 var currentTab = 0; //currently active tab
