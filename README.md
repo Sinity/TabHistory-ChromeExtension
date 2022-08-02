@@ -16,4 +16,9 @@ Jeśli użytkownik następnie cofnąłby się wstecz, currentEntry ustawiony by�
 Kod znajduje się w extension/background.js - reszta repo to szkielet komunikacji IPC z daemonem który miał komunikować się z aplikacją desktopową
 służącą do śledzenia/analizy czasu jaki użytkownik spędził w danych miejscach w sieci - jednak ta nie została wykonana.
 
+
+------
+------
+
+
 Rozszerzenie niekoniecznie w tej chwili jest sprawne - było ono pisane w 2016, możliwe że od tego czasu były zmiany w API i/lub funkcjonowaniu przeglądarki które je psują.
