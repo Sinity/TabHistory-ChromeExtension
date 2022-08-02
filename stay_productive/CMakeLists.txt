@@ -6,14 +6,14 @@ set(CMAKE_BUILD_TYPE "Debug")
 #set(CMAKE_BUILD_TYPE "Release")
 
 #flags
-add_definitions(-std=c++14 -Wall -Wextra -m64)
+add_definitions(-std=c++14 -Wall)# -Wextra -m64)
 
 #libs
 #include_directories(SYSTEM D:/libs/boost)
 
 #project files and include pathes
 include_directories(.)
-file(GLOB_RECURSE SRCS "src/*.cpp")
+file(GLOB_RECURSE SRCS "src/*.cpp" "src/netsock/*.cpp")
 
 #build library
 add_executable(stay_productive ${SRCS})

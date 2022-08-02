@@ -1,0 +1,9 @@
+NetSock by gynvael.coldwind//vx (c) 2012
+Version: 2012-11-18
+http://gynvael.coldwind.pl/
+
+A simple networking (socket) library for C++ for Windows and systems
+based on Linux kernel.
+
+See LICENSE file for licensing details.
+

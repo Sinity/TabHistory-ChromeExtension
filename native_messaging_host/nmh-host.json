@@ -1,0 +1,9 @@
+{
+  "name": "ezo.stayproductive.native_messaging_host",
+  "description": "Native messaging host",
+  "path": "D:\\DEV\\Projects\\StayProd\\native_messaging_host\\win_build\\Debug\\native_messaging_host.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://gloemncpdddejmolklhkeodkgapbipbn/"
+  ]
+}

@@ -1,0 +1,23 @@
+*** version 2012.11.18
+
+- fixed a bug in ReadAll where the function didn't add the proper
+offset to receiving buffer in second and next packets
+
+*** version 2012.06.03
+
+- added ReadAll function that reads the data until the buffer is
+all filled up, not returning earlier (unless there was an error)
+
+*** version 2011.10.13
+
+- changed all the "unsigned char*" in the interface to proper 
+"void*" or "const void*" types
+
+- fixed a bug where WriteAll would enter and infinite loop
+if the reciepient would disconnect while using a non-blocking
+socket (thanks to . for pointing this out)
+
+*** version 2011.10
+
+- initial [official] public release
+
